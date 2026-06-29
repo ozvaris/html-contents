@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Curated Knowledge Repo Örnekleri</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --page-soft: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+      --code-bg: #f1f5f9;
+      --table-head: #f8fafc;
+      --row-hover: #f9fafb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 14px;
+      border: 1px solid #bfdbfe;
+      border-radius: 999px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+
+    .intro {
+      max-width: 780px;
+      color: var(--muted);
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: var(--card);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 860px;
+    }
+
+    thead {
+      background: var(--table-head);
+    }
+
+    th,
+    td {
+      padding: 18px 20px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      color: #334155;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    tbody tr:hover {
+      background: var(--row-hover);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    code {
+      padding: 4px 7px;
+      border-radius: 7px;
+      background: var(--code-bg);
+      color: #0f172a;
+      font-size: 14px;
+      white-space: nowrap;
+      border: 1px solid var(--border);
+    }
+
+    .type {
+      color: #0369a1;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      margin-top: 24px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--page-soft);
+      color: var(--muted);
+    }
+
+    .note strong {
+      color: var(--text);
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 32px 14px;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+
+      th,
+      td {
+        padding: 14px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header>
+      <div class="badge">GitHub Curated Knowledge Repos</div>
+      <h1>GitHub Tabanlı Kürasyon / Knowledge Base Örnekleri</h1>
+      <p class="intro">
+        Bu liste; awesome list, docs-as-code, community knowledge base ve Markdown tabanlı
+        kaynak kataloğu mantığını anlamak için seçilmiş örnek repoları içerir.
+      </p>
+    </header>
+
+    <section class="table-wrap" aria-label="GitHub knowledge repo örnekleri tablosu">
+      <table>
+        <thead>
+          <tr>
+            <th>Repo / Keyword</th>
+            <th>Türü</th>
+            <th>Ne için iyi örnek?</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td><code>sindresorhus/awesome</code></td>
+            <td class="type">Meta awesome list</td>
+            <td>
+              Awesome list kültürünün merkezi gibi. Başka awesome list’leri listeler.
+              “Kürasyon, koleksiyon değildir” mantığını açıkça temsil eder.
+              <a href="https://github.com/sindresorhus/awesome" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>EbookFoundation/free-programming-books</code></td>
+            <td class="type">Community kaynak kataloğu</td>
+            <td>
+              Ücretsiz programlama kitapları ve eğitim kaynakları için devasa topluluk listesi.
+              Wiki/kaynak veritabanı hissi güçlü.
+              <a href="https://github.com/EbookFoundation/free-programming-books" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>public-apis/public-apis</code></td>
+            <td class="type">API kataloğu</td>
+            <td>
+              Public/free API’leri kategoriyle listeleyen Markdown tabanlı kaynak dizini.
+              <code>free-for-dev</code> reposuna metodolojik olarak çok yakın.
+              <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>awesome-selfhosted/awesome-selfhosted</code></td>
+            <td class="type">Self-hosted katalog / awesome list</td>
+            <td>
+              Kendi sunucunda host edebileceğin free software network servisleri ve web uygulamaları listesi.
+              <a href="https://github.com/awesome-selfhosted/awesome-selfhosted" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>github/docs</code></td>
+            <td class="type">Kurumsal docs-as-code</td>
+            <td>
+              GitHub’ın kendi dokümantasyon reposu. Markdown içerik + PR review + yayın pipeline
+              modelinin kurumsal örneği.
+              <a href="https://github.com/github/docs" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>donnemartin/system-design-primer</code></td>
+            <td class="type">Teknik öğrenme rehberi</td>
+            <td>
+              Sistem tasarımı için community-maintained eğitim kitabı/rehber.
+              Liste değil, daha çok açık kaynak teknik kitap gibi.
+              <a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>ripienaar/free-for-dev</code></td>
+            <td class="type">Free-tier SaaS kataloğu</td>
+            <td>
+              Geliştiricilere ücretsiz katman sunan servisleri listeler.
+              PR template + contribution rules + Docsify ile temiz bir curated directory örneği.
+              <a href="https://github.com/ripienaar/free-for-dev" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>enaqx/awesome-react</code></td>
+            <td class="type">React awesome list</td>
+            <td>
+              React ekosistemi için framework, component, state management, testing ve tooling
+              kaynaklarını listeler.
+              <a href="https://github.com/enaqx/awesome-react" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>sindresorhus/awesome-nodejs</code></td>
+            <td class="type">Node.js awesome list</td>
+            <td>
+              Node.js paketleri, araçları ve kaynakları için kürasyon listesi.
+              <a href="https://github.com/sindresorhus/awesome-nodejs" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>vinta/awesome-python</code></td>
+            <td class="type">Python awesome list</td>
+            <td>
+              Python framework, library, tool ve kaynakları için en bilinen awesome list örneklerinden biri.
+              <a href="https://github.com/vinta/awesome-python" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>alexpate/awesome-design-systems</code></td>
+            <td class="type">Design systems awesome list</td>
+            <td>
+              Design system kaynakları, prensipleri, örnekleri ve pattern library referansları
+              için iyi bir kürasyon listesi.
+              <a href="https://github.com/alexpate/awesome-design-systems" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><code>brillout/awesome-react-components</code></td>
+            <td class="type">React component odaklı awesome list</td>
+            <td>
+              React component kütüphaneleri ve component kaynakları için daha dar odaklı
+              awesome list örneği.
+              <a href="https://github.com/brillout/awesome-react-components" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside class="note">
+      <strong>Kısa not:</strong>
+      Bu repo türleri genelde “uygulama” değil; bilgi, kaynak, link veya dokümantasyon
+      kürasyonu yapan GitHub tabanlı yapılardır. En temel ortak desen:
+      Markdown içerik + Pull Request + review + topluluk katkısıdır.
+    </aside>
+  </main>
+</body>
+</html>
