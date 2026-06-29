@@ -1,58 +1,64 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HTML Contents</title>
-  <meta name="description" content="GitHub Pages üzerinde yayınlanan kişisel HTML içerik arşivi." />
-  <link rel="stylesheet" href="assets/styles.css" />
+  <meta name="description" content="A personal static HTML content archive published with GitHub Pages." />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
   <main class="page">
-    <nav class="site-nav" aria-label="Ana gezinme">
+    <nav class="site-nav" aria-label="Main navigation">
       <a class="site-brand" href="index.html">HTML Contents</a>
       <div class="site-nav-links">
-        <a href="index.html">Ana sayfa</a>
+        <a href="index.html">Home</a>
+        <details class="language-menu">
+          <summary><span class="flag"></span><span class="lang-code">EN</span></summary>
+          <div class="language-options">
+            <a href="tr/index.html"><span class="flag">🇹🇷</span><span class="lang-code">TR</span></a>
+          </div>
+        </details>
       </div>
     </nav>
 
     <header>
       <div class="badge">Static HTML Knowledge Archive</div>
-      <h1>Kişisel HTML İçerik Arşivi</h1>
+      <h1>Personal HTML Content Archive</h1>
       <p class="intro">
-        Bu site, GitHub Pages üzerinde yayınlanan küçük bir statik HTML içerik arşividir.
-        Yazılım, metodoloji, GitHub, AI, kaynak listeleri ve öğrenme notları gibi konularda
-        hazırlanmış bağımsız HTML sayfalarını tek bir giriş noktasında toplar.
+        This site is a small static HTML content archive published with GitHub Pages.
+        It gathers standalone HTML notes about software, methodology, GitHub, AI,
+        curated resources, and learning topics under one entry point.
       </p>
     </header>
 
     <section class="section" aria-labelledby="contents-title">
-      <h2 id="contents-title">İçerikler</h2>
+      <h2 id="contents-title">Contents</h2>
       <div class="grid">
         <a class="card" href="GitHub-Curated-Knowledge-Repo.html">
           <span class="card-label">GitHub / Knowledge Base</span>
-          <h3>GitHub Tabanlı Kürasyon / Knowledge Base Örnekleri</h3>
+          <h3>GitHub-Based Curation / Knowledge Base Examples</h3>
           <p>
-            Awesome list, docs-as-code, community knowledge base ve Markdown tabanlı kaynak
-            kataloğu mantığını anlamak için seçilmiş örnek GitHub repoları.
+            Selected GitHub repositories that help explain awesome lists, docs-as-code,
+            community knowledge bases, and Markdown-based resource catalogues.
           </p>
-          <span class="card-link">Sayfayı aç →</span>
+          <span class="card-link">Open page →</span>
         </a>
       </div>
     </section>
 
-    <section class="section panel" aria-label="Bu arşivin amacı">
-      <h2>Bu arşivin amacı</h2>
+    <section class="section panel" aria-label="Purpose of this archive">
+      <h2>Purpose of this archive</h2>
       <p>
-        Buradaki sayfalar tek başına okunabilir kısa içeriklerdir; ancak ana sayfa sayesinde
-        hepsi aynı tasarım diliyle ve tek bir katalog mantığıyla düzenlenir. Yeni HTML notları
-        eklendikçe bu sayfadaki içerik listesine yeni kartlar eklenebilir.
+        The pages here are short standalone notes, but the home page gives them a shared
+        design language and a catalogue structure. As new HTML notes are added, new cards
+        can be added to this contents list.
       </p>
     </section>
 
     <footer class="footer">
-      GitHub Pages üzerinde yayınlanan statik HTML içerik arşivi.
+      Static HTML content archive published with GitHub Pages.
     </footer>
   </main>
 </body>
